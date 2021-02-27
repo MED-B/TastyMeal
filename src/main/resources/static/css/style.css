@@ -1,0 +1,259 @@
+body{
+    
+    color: black;
+    font-family: monospace;
+    font-size: 17px;
+    font-weight: 210;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
+
+
+}
+aside{
+    position: relative;
+    float: right;
+    margin-right: 2vw;
+    width: 15vw;
+    height: 100%;
+ 
+}
+aside #logo{
+    position: relative;
+    width: 100px;
+    height: 100%;
+
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.count{
+    position: fixed;
+    display: block;
+    height: 23vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    background-color: white;
+    font-size: 17px;
+    padding-top: 1vh;
+
+}
+.count div{
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    
+    font-family: poppins;
+    font-weight: 300;
+
+}
+nav{
+    display: flex;
+    position:relative;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 12vh;
+    background-color: tomato;
+    color: rgb(231, 220, 220);
+    
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 0;
+    padding-right: 3vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.items{
+    position: relative;
+    display: flex;
+    width: 60vw;
+    height: 100%;
+    margin-right:auto;
+    margin-left: 0;
+    
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+.items li{
+    list-style: none;
+}
+.items li a{
+    position: relative;
+    margin-left: 3vw;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+h2{
+    text-align:left;
+    font-family: arial;
+    font-size :medium;
+    color: red;
+    
+}
+h1{
+    color: blue;
+    text-align: center;
+
+    font-family: arial;
+    font-size :30px;
+
+}
+
+@media only screen and (max-width: 1000px ){
+    
+    .items li a {
+        font-size: 80%;
+    }
+}
+@media only screen and (max-width: 600px ){
+    .count{
+        height: 35vh;
+        
+    }
+    nav{
+        height: 24vh;
+       
+        justify-content: unset;
+        align-items: unset;
+        width: 100%;
+        display: block;
+        transform: translateY(-11vh);
+        
+    }
+    aside{
+        position: relative;
+        transform: translateY(-12vh);
+        height: 12vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    aside #logo{
+        position: relative;
+        float: unset;
+        height: 100%;
+        width: 15vw;
+        margin-left: 42.5%;
+        margin-right: 42.5%;
+        
+     
+    }
+    .items{
+        
+        height: 12vh;
+        bottom: 0;
+        margin-bottom: 0;
+        width: 100vw;
+        margin-top: 12vh;
+        padding-left: 0.5vw;
+        padding-right: 1vw;
+        transform: translateY(+12vh);
+    }
+    .items li a {
+        font-size: 80%;
+    }
+    
+
+}
+/*Pour ABONNEMENT*/
+form{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 1vh;
+}
+fieldset{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+   border: 1px tomato solid;
+    align-self: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+}
+fieldset legend{
+    color: tomato;
+    font-size: 27px;
+    font-weight: 200;
+}
+fieldset div{
+    position: relative;
+    margin-bottom: 10px;
+    width: 98%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 1vw;
+    padding-top:1vh;
+    
+    
+}
+fieldset div label{
+    color: black;
+    font-size: 20px;
+    width: 5%;
+    
+}
+fieldset div input{
+    border: none;
+    border-bottom: black 1px solid;
+    padding-bottom: 3px;
+    outline: none;
+    width: 50%;
+    float: right;
+    font-size: 17px;
+    margin-top: 3vh;
+}
+fieldset div input:focus{
+   
+    border-bottom: 3px solid tomato ;
+    transition: 0.7s;
+    animation-fill-mode: backwards;
+}
+input[type="submit"]{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    background-color: tomato;
+    color: white;
+    right: auto;
+    left: auto;
+    border:1px solid transparent;
+}
+input[type="submit"]:hover{
+    color: tomato;
+    background-color: white;
+    border:1px solid tomato;
+    padding: 10px;
+
+    cursor: pointer; 
+}
+input[type="submit"]:focus{
+    outline: none;
+}
+.list_item{
+	height:50vh;
+	
+}

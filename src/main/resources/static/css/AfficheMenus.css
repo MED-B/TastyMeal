@@ -1,0 +1,30 @@
+body{
+	background-color:rgb(255, 255, 255);
+	background-image: url("pics/plate.png");
+}
+h1{
+	color:black;
+	text-align:center;
+}
+#code_menu , #id_restaurateur, #items, #prix{
+	outline:none;color:black;
+	border:none;
+	background-color:transparent;
+
+	text-align:center;
+}
+#items{
+	font-size:25px;
+}
+
+#code_menu{
+	text-align:left;
+}
+.card{
+	background-color:transparent;
+	color:black;
+}
+.col-sm-6{
+	margin-bottom:20px;
+	
+}
